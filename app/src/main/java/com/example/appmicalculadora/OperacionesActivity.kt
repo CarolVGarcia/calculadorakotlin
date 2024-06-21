@@ -30,15 +30,15 @@ class OperacionesActivity : AppCompatActivity() {
         eventosClic()
     }
     public fun iniciarCompontes(){
-        txtUsuario = findViewById(R.id.txtNombre)
+        txtUsuario = findViewById(R.id.txtUsuario)
         txtResultado = findViewById(R.id.txtResultado)
         txtNum1 = findViewById(R.id.txtNum1)
         txtNum2 = findViewById(R.id.txtNum2)
-        btnSumar = findViewById(R.id.btnMas)
-        btnRestar = findViewById(R.id.btnRes)
-        btnMult = findViewById(R.id.btnMul)
+        btnSumar = findViewById(R.id.btnSumar)
+        btnRestar = findViewById(R.id.btnRestar)
+        btnMult = findViewById(R.id.btnMultiplicar)
         btnDiv = findViewById(R.id.btnDiv)
-        btnCerrar = findViewById(R.id.btnCerrar)
+        btnCerrar = findViewById(R.id.btnRegresar)
         btnLimpiar = findViewById(R.id.btnLimpiar)
         val bundle: Bundle? = intent.extras
         txtUsuario.text = bundle?.getString("Usuario")

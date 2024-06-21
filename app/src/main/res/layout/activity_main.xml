@@ -10,44 +10,37 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="20sp">
-
+        android:orientation="vertical">
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/txtUsuario"
             android:hint="Usuario"
-            android:padding="10sp"
-            android:id="@+id/txtUsuario">
-
+            android:padding="10sp">
         </EditText>
-
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Contaseña"
-            android:padding="10sp"
-            android:id="@+id/txtContraseña">
-
+            android:id="@+id/txtContraseña"
+            android:hint="Contraseña"
+            android:padding="10sp">
         </EditText>
-
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Ingresar"
-            android:id="@+id/btnIngresar"
-            android:paddingBottom="10sp">
-
+            android:padding="10sp"
+            android:id="@+id/btnIngresar">
         </Button>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Salir"
+            android:padding="10sp"
             android:id="@+id/btnSalir">
-
         </Button>
 
-
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

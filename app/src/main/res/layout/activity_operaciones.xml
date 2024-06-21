@@ -12,106 +12,84 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="10sp">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Usuario: "
-            android:id="@+id/txtUsuario"
-            android:textSize="20sp"
-            android:gravity="center"
-            android:paddingBottom="10sp">
-
-        </TextView>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/txtNum1"
-            android:inputType="numberDecimal"
-            android:hint="Numero 1"
-            android:paddingBottom="10sp">
-
-        </EditText>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/txtNum2"
-            android:inputType="numberDecimal"
-            android:hint="Numero 2"
-            android:paddingBottom="10sp">
-
-        </EditText>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/txtResultado"
-            android:text="Resultado: "
-            android:paddingBottom="10sp">
-
-        </TextView>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:padding="20sp"
-            android:orientation="horizontal">
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="+"
-                android:id="@+id/btnSumar">
-
-            </Button>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="-"
-                android:id="@+id/btnRestar">
-
-            </Button>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="*"
-                android:id="@+id/btnMultiplicar">
-
-            </Button>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="/"
-                android:id="@+id/btnDiv">
-,
-            </Button>
-
-
-        </LinearLayout>
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Usuario :"
+        android:padding="20sp"
+        android:id="@+id/txtNombre">
+    </TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNum1"
+        android:inputType="numberDecimal"
+        android:hint="Num1">
+    </EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNum2"
+        android:inputType="numberDecimal"
+        android:hint="Num2">
+    </EditText>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="resultado :"
+        android:padding="20sp"
+        android:id="@+id/txtResultado">
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/btnMas"
+        android:paddingRight="10sp">
+    </Button>
         <Button
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Limpiar"
-            android:id="@+id/btnLimpiar">
+            android:text="-"
+            android:id="@+id/btnRes"
+            android:paddingRight="10sp">
         </Button>
         <Button
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Regresar"
-            android:id="@+id/btnRegresar">
+            android:text="*"
+            android:id="@+id/btnMul"
+            android:paddingRight="10sp">
         </Button>
-
-
-
-
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:id="@+id/btnDiv"
+            android:paddingRight="10sp">
+        </Button>
     </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Limpiar"
+        android:padding="10sp"
+        android:id="@+id/btnLimpiar"
+        app:layout_constraintBottom_toBottomOf="parent">
+    </Button>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCerrar"
+        app:layout_constraintBaseline_toTopOf="@id/btnLimpiar"
+        android:text="Cerrar">
+    </Button>
 
 
 

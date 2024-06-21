@@ -82,8 +82,9 @@ class OperacionesActivity : AppCompatActivity() {
             txtResultado.text= operacion().toString()
         })
         btnDiv.setOnClickListener(View.OnClickListener {
-            if(this.txtNum2.text.toString().toFloat()==0f)
-                txtResultado.text="No es posible dividir sobre 0"
+            if( this.txtNum1 == null || this.txtNum2 == null)
+                txtResultado.text="No es posible dividir sobre 0 o Falta ingresar un valor válido"
+
             else {
                 opcion = 4
                 txtResultado.text= operacion().toString()

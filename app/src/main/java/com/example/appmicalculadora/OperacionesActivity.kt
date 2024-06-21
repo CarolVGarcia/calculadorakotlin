@@ -8,6 +8,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.example.appcalculadora.Operaciones
 
 class OperacionesActivity : AppCompatActivity() {
     private lateinit var txtUsuario : TextView
@@ -20,7 +21,9 @@ class OperacionesActivity : AppCompatActivity() {
     private lateinit var btnDiv : Button
     private lateinit var btnCerrar : Button
     private lateinit var btnLimpiar : Button
+
     private lateinit var operaciones: Operaciones
+
     var opcion : Int =0
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -59,11 +62,11 @@ class OperacionesActivity : AppCompatActivity() {
             when(opcion){
                 1 -> {res=operaciones.suma()}
                 2 -> {res= operaciones.resta()}
-                3 -> {res= operaciones.multiplicacion()}
-                4 -> {res= operaciones.division()}
+                3 -> {res= operaciones.mult()}
+                4 -> {res= operaciones.div()}
             }
         } else Toast.makeText(this,"Falto capturar informacion",Toast.LENGTH_SHORT).show()
-            return res;
+        return res;
     }
     public fun eventosClic(){
         btnSumar.setOnClickListener(View.OnClickListener {

@@ -1,22 +1,17 @@
-package com.example.appmicalculadora
-
-class Operaciones (var num1:Float, var num2:Float){
-    public fun suma() : Float {
-        return this.num1 + this.num2
-
-
+package com.example.appcalculadora
+class Operaciones (var num1:Float , var num2:Float) {
+    public fun suma ():Float {
+        return this.num1+num2
     }
-
-    public  fun resta() : Float {
-        return this.num1 - this.num2
+    public fun resta() : Float {
+        return this.num1-num2
     }
-
-    public  fun multiplicacion() : Float{
-        return this.num1 * this.num2
+    public fun mult() : Float {
+        return this.num2*num2
     }
-
-    public fun division() : Float {
-        return this.num1 / this.num2
+    public fun div() : Float {
+        if(this.num1!=0.0f && this.num2!=0.0f)
+            return this.num1/num2
+        else return 0.0f
     }
-
 }
